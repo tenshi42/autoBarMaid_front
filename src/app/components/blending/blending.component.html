@@ -1,0 +1,6 @@
+<p-dialog class="blending" header="Service en cours" [(visible)]="visible" [style]="{width: '90vw', height: '90vw'}" [modal]="true" [closable]="false">
+  <p>Temps restant : {{remainingTime}} seconde<span *ngIf="remainingTime > 1">s</span></p>
+  <p-progressBar [value]="(fullTime - remainingTime) / fullTime * 100" [showValue]="false"></p-progressBar>
+  <p>C'est long ? Aide nous à améliorer la machine :)</p>
+  <img src="assets/qr-code-lydia.png"/>
+</p-dialog>

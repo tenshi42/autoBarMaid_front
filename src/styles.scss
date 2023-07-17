@@ -1,0 +1,101 @@
+body {
+  margin: 25px;
+  text-transform: uppercase;
+
+  .p-selectbutton div span, .p-button {
+    font-size: 1.5rem;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 50px);
+
+    .header {
+      display: flex;
+      justify-content: center;
+
+      .p-selectbutton div {
+        width: 35vw;
+      }
+    }
+
+    .body {
+      display: flex;
+      justify-content: center;
+
+      button {
+        height: 10vh;
+        text-transform: uppercase;
+
+        & + button {
+          margin-top: 5vh;
+        }
+      }
+
+      .cocktails {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+      }
+
+      .flashes {
+        display: flex;
+        justify-content: space-between;
+        width: 80vw;
+
+        .alcohols, .softs {
+          display: flex;
+          flex-direction: column;
+          width: 37vw;
+        }
+      }
+    }
+
+    .footer {
+      width: 90vw;
+      align-self: center;
+      display: flex;
+      justify-content: space-between;
+
+      p-selectButton {
+        align-self: center;
+
+        .p-selectbutton div {
+          width: 14vw;
+        }
+      }
+
+      button {
+        height: 6rem !important;
+        width: 6rem !important;
+
+        span {
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+
+  .blending {
+    .p-dialog-content {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        font-size: 1.5rem;
+      }
+
+      p-progressBar + p {
+        margin-top: 10vw;
+      }
+
+      img {
+        width: 20vw;
+        height: 20vw;
+        align-self: center;
+      }
+    }
+  }
+}

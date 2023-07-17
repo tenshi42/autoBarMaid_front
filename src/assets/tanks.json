@@ -1,0 +1,42 @@
+[
+  {
+    "id": "0",
+    "label": "Vodka",
+    "type": "ALCOHOL"
+  },
+  {
+    "id": "1",
+    "label": "Rhum",
+    "type": "ALCOHOL"
+  },
+  {
+    "id": "2",
+    "label": "Gin",
+    "type": "ALCOHOL"
+  },
+  {
+    "id": "3",
+    "label": "Jägermeister",
+    "type": "ALCOHOL"
+  },
+  {
+    "id": "4",
+    "label": "Red Bull",
+    "type": "SOFT"
+  },
+  {
+    "id": "5",
+    "label": "Mango Loco",
+    "type": "SOFT"
+  },
+  {
+    "id": "6",
+    "label": "Coca",
+    "type": "SOFT"
+  },
+  {
+    "id": "7",
+    "label": "Tonic",
+    "type": "SOFT"
+  }
+]

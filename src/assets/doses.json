@@ -1,0 +1,14 @@
+[
+  {
+    "label": "Fragile",
+    "alcohol": 0.1
+  },
+  {
+    "label": "Normal",
+    "alcohol": 0.2
+  },
+  {
+    "label": "Bourrin",
+    "alcohol": 0.35
+  }
+]
