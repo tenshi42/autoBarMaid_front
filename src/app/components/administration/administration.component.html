@@ -1,0 +1,12 @@
+<p-dialog class="administration" header="Administration" [(visible)]="visible" [style]="{width: '90vw', height: '90vw'}"
+          [modal]="true" [closable]="true" (visibleChange)="visibleChange.emit($event)">
+  <div>
+    <div *ngFor="let tank of tanks" class="tank">
+      <span>{{tank.label}}</span>
+      <div class="actions">
+        <p-inputSwitch [(ngModel)]="tank.enabled" (onChange)="onChange()"></p-inputSwitch>
+        <p-button (onClick)="refill(tank)">Remplissage</p-button>
+      </div>
+    </div>
+  </div>
+</p-dialog>

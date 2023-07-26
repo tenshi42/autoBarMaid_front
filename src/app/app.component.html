@@ -1,21 +1,30 @@
 <div class="main">
   <section class="header">
     <p-selectButton [options]="typeOptions" [(ngModel)]="type"></p-selectButton>
+    <p-button type="button" class="p-button-raised p-button-rounded" (click)="administrating = true">
+      <ng-template pTemplate="icon">
+        <fa-icon [icon]="administrationIcon"></fa-icon>
+      </ng-template>
+    </p-button>
   </section>
 
   <section class="body">
     <div *ngIf="type.code === typeCodeEnum.COCKTAIL" class="cocktails">
       <button pButton class="p-button-raised" *ngFor="let cocktailOption of cocktailOptions" (click)="cocktail = cocktailOption"
-              [ngClass]="{'p-button-secondary': cocktail != cocktailOption}">{{cocktailOption.label}}</button>
+              [ngClass]="{'p-button-secondary': cocktail != cocktailOption}" [disabled]="isCocktailDisabled(cocktailOption)">{{cocktailOption.label}}</button>
     </div>
     <div *ngIf="type.code === typeCodeEnum.FLASH" class="flashes">
       <div class="alcohols">
         <button pButton class="p-button-raised" *ngFor="let alcoholOption of alcoholOptions" (click)="alcohol = alcoholOption"
-                [ngClass]="{'p-button-secondary': alcohol != alcoholOption}">{{alcoholOption.label}}</button>
+                [ngClass]="{'p-button-secondary': alcohol != alcoholOption}" [disabled]="!alcoholOption.enabled">
+          {{alcoholOption.label}}
+        </button>
       </div>
       <div class="softs">
         <button pButton class="p-button-raised" *ngFor="let softOption of softOptions" (click)="soft = softOption"
-                [ngClass]="{'p-button-secondary': soft != softOption}">{{softOption.label}}</button>
+                [ngClass]="{'p-button-secondary': soft != softOption}" [disabled]="!softOption.enabled">
+          {{softOption.label}}
+        </button>
       </div>
     </div>
   </section>
@@ -23,10 +32,15 @@
   <section class="footer">
     <p-selectButton [options]="doseOptions" [(ngModel)]="dose"></p-selectButton>
     <p-selectButton [options]="cupOptions" [(ngModel)]="cup"></p-selectButton>
-    <button [disabled]="(type.code == typeCodeEnum.COCKTAIL && !cocktail) || (type.code == typeCodeEnum.FLASH && (!alcohol || !soft))"
-            pButton type="button" class="p-button-raised p-button-rounded" icon="pi pi-check" (click)="blend()"></button>
+    <p-button [disabled]="(type.code == typeCodeEnum.COCKTAIL && !cocktail) || (type.code == typeCodeEnum.FLASH && (!alcohol || !soft))"
+              type="button" class="p-button-raised p-button-rounded" icon="" (click)="blend()">
+      <ng-template pTemplate="icon">
+        <fa-icon [icon]="blendingIcon"></fa-icon>
+      </ng-template>
+    </p-button>
   </section>
 </div>
 
 <p-toast></p-toast>
 <abm-blending [visible]="blending" [fullTime]="fullTime" [remainingTime]="remainingTime"></abm-blending>
+<abm-administration [(visible)]="administrating" [tanks]="tanks" (visibleChange)="administrationVisibleChanged()"></abm-administration>

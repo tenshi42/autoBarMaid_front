@@ -2,41 +2,49 @@
   {
     "id": "0",
     "label": "Vodka",
-    "type": "ALCOHOL"
+    "type": "ALCOHOL",
+    "enabled": true
   },
   {
     "id": "1",
     "label": "Rhum",
-    "type": "ALCOHOL"
+    "type": "ALCOHOL",
+    "enabled": true
   },
   {
     "id": "2",
     "label": "Gin",
-    "type": "ALCOHOL"
+    "type": "ALCOHOL",
+    "enabled": true
   },
   {
     "id": "3",
     "label": "Jägermeister",
-    "type": "ALCOHOL"
+    "type": "ALCOHOL",
+    "enabled": true
   },
   {
     "id": "4",
     "label": "Red Bull",
-    "type": "SOFT"
+    "type": "SOFT",
+    "enabled": true
   },
   {
     "id": "5",
     "label": "Mango Loco",
-    "type": "SOFT"
+    "type": "SOFT",
+    "enabled": true
   },
   {
     "id": "6",
     "label": "Coca",
-    "type": "SOFT"
+    "type": "SOFT",
+    "enabled": true
   },
   {
     "id": "7",
     "label": "Tonic",
-    "type": "SOFT"
+    "type": "SOFT",
+    "enabled": true
   }
 ]

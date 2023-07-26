@@ -12,11 +12,15 @@ import {MessageService} from "primeng/api";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {DialogModule} from "primeng/dialog";
 import {ProgressBarModule} from "primeng/progressbar";
+import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
+import { AdministrationComponent } from './components/administration/administration.component';
+import {InputSwitchModule} from "primeng/inputswitch";
 
 @NgModule({
   declarations: [
     AppComponent,
-    BlendingComponent
+    BlendingComponent,
+    AdministrationComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +31,9 @@ import {ProgressBarModule} from "primeng/progressbar";
     ToastModule,
     BrowserAnimationsModule,
     DialogModule,
-    ProgressBarModule
+    ProgressBarModule,
+    FontAwesomeModule,
+    InputSwitchModule
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]
