@@ -78,4 +78,11 @@ export class WebSocketService {
       }
     })
   }
+
+  public refill(tank: Tank) {
+    this.messages.next({type: "refill", data: {
+        pump: tank.id
+      }
+    })
+  }
 }

@@ -1,5 +1,6 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Tank} from "../../models/tank.model";
+import {WebSocketService} from "../../services/web-socket.service";
 
 @Component({
   selector: 'abm-administration',
@@ -16,12 +17,12 @@ export class AdministrationComponent implements OnInit {
   @Input()
   tanks: Tank[]
 
-  constructor() {}
+  constructor(private webSocketService: WebSocketService) {}
 
   ngOnInit(): void {}
 
   refill(tank: Tank) {
-
+    this.webSocketService.refill(tank)
   }
 
   onChange() {
