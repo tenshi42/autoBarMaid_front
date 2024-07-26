@@ -10,5 +10,9 @@
   {
     "label": "Bourrin",
     "alcohol": 0.35
+  },
+  {
+    "label": "Bonnot",
+    "alcohol": 0.5
   }
 ]

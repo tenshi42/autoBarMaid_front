@@ -5,7 +5,7 @@ import {Tank} from "../models/tank.model"
 import {Dose} from "../models/dose.model"
 import {Cup} from "../models/cup.model"
 
-const URL = "ws://7.tcp.eu.ngrok.io:14708"
+const URL = "ws://localhost:8765"
 
 interface WebSocketMessage {
   type: string

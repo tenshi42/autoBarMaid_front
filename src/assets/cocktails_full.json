@@ -2,16 +2,21 @@
   {
     "label": "Vodka - Red Bull",
     "alcohol": "0",
-    "soft": "3"
+    "soft": "4"
   },
   {
     "label": "Rhum - Coca",
     "alcohol": "1",
-    "soft": "5"
+    "soft": "6"
   },
   {
     "label": "Jager - Bomb",
+    "alcohol": "3",
+    "soft": "4"
+  },
+  {
+    "label": "Gin - Tonic",
     "alcohol": "2",
-    "soft": "3"
+    "soft": "7"
   }
 ]

@@ -13,25 +13,37 @@
   },
   {
     "id": "2",
-    "label": "Jägermeister",
+    "label": "Gin",
     "type": "ALCOHOL",
     "enabled": true
   },
   {
     "id": "3",
+    "label": "Jägermeister",
+    "type": "ALCOHOL",
+    "enabled": true
+  },
+  {
+    "id": "4",
     "label": "Red Bull",
     "type": "SOFT",
     "enabled": true
   },
   {
-    "id": "4",
+    "id": "5",
     "label": "Mango Loco",
     "type": "SOFT",
     "enabled": true
   },
   {
-    "id": "5",
+    "id": "6",
     "label": "Coca",
+    "type": "SOFT",
+    "enabled": true
+  },
+  {
+    "id": "7",
+    "label": "Tonic",
     "type": "SOFT",
     "enabled": true
   }
